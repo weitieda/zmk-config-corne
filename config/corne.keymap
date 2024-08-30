@@ -23,6 +23,11 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <14 15 16>;
         };
+
+        delete_line {
+            bindings = <&kp LA(D)>;
+            key-positions = <13 14 15 16>;
+        };
     };
 
     keymap {
