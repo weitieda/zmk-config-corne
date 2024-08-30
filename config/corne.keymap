@@ -56,10 +56,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET       &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp ASTERISK
-&kp LEFT_CONTROL  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp MINUS       &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE              &kp GRAVE
-&kp LSHFT         &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0          &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE             &trans
-                                                 &kp LGUI      &trans        &kp ENTER       &kp SPACE       &kp BACKSPACE  &trans
+&kp TAB           &kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR        &kp PERCENT     &kp CARET       &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp ASTERISK
+&kp LEFT_CONTROL  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5    &kp MINUS       &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE              &kp GRAVE
+&kp LSHFT         &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp N0          &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE             &kp RIGHT_SHIFT
+                                                 &trans        &kp LEFT_COMMAND  &kp ENTER       &kp SPACE       &kp BACKSPACE  &kp RIGHT_COMMAND
             >;
         };
 
