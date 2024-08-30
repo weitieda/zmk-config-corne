@@ -23,6 +23,18 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <14 15 16>;
         };
+
+        combo_opt_fn_del {
+            timeout-ms = <50>; // Adjust the timeout as needed
+            key-positions = <14 15>;
+            bindings = <&kp LALT &kp FN &kp DEL>; // Option (LALT) + Fn + Delete (DEL)
+        };
+
+        combo_opt_fn_del_word {
+            timeout-ms = <50>; // Adjust the timeout as needed
+            key-positions = <12 13 14>;
+            bindings = <&kp LALT &kp FN &kp DEL>; // Option (LALT) + Fn + Delete (DEL)
+        };
     };
 
     keymap {
