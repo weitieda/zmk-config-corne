@@ -31,11 +31,14 @@
     };
 
     behaviors {
-        double_tap_stay_on_lower: double_tap_stay_on_lower {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_TAP_STAY_ON_LOWER";
-            #binding-cells = <0>;
-            bindings = <&none>, <&mo 1>;
+        lower_hold: lower_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LOWER_HOLD";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <36>;
         };
     };
 
@@ -50,10 +53,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R              &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F              &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V              &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_ALT
-                         &mo 1  &kp RIGHT_COMMAND  &kp ENTER    &kp SPACE  &kp BACKSPACE  &mo 2
+&kp TAB    &kp Q  &kp W  &kp E            &kp R              &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
+&kp LCTRL  &kp A  &kp S  &kp D            &kp F              &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C            &kp V              &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_ALT
+                         &lower_hold 1 1  &kp RIGHT_COMMAND  &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo 2
             >;
         };
 
@@ -68,7 +71,7 @@
 &kp TAB           &kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR        &kp PERCENT     &kp CARET       &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH  &kp ASTERISK
 &kp LEFT_CONTROL  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5    &kp MINUS       &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE              &kp GRAVE
 &kp LSHFT         &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp N0          &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE             &kp RIGHT_SHIFT
-                                                 &trans        &kp LEFT_COMMAND  &kp ENTER       &kp SPACE       &kp BACKSPACE  &kp RIGHT_COMMAND
+                                                 &trans        &kp LEFT_COMMAND  &kp SPACE       &kp ENTER       &kp BACKSPACE  &kp RIGHT_COMMAND
             >;
         };
 
