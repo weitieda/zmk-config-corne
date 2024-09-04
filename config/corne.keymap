@@ -15,17 +15,11 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
 &kp TAB     &kp Q                   &kp W  &kp E        &kp R             &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
-&kp ESCAPE  &mt LC(LS(LA(LGUI))) A  &kp S  &kp D        &kp F             &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&none       &kp Z                   &kp X  &kp C        &kp V             &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &none
-                                           &bootloader  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo 2
+&kp ESCAPE  &mt LC(LS(LA(LGUI))) A  &mt LEFT_CONTROL S  &mt LEFT_ALT D    &mt LEFT_GUI F &kp G           &kp H  &mt RIGHT_GUI J &mt LEFT_ALT K &mt LEFT_CONTROL L 	&mt LC(LS(LA(LGUI))) SEMICOLON  &kp SQT
+&none      &mt RG(Z) Z &mt RG(X) X &mt RG(C) C &mt RG(V) V        &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &none
+                                           &mo1  &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &kp BACKSPACE  &mo 2
             >;
         };
 
