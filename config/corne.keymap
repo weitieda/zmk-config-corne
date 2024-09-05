@@ -5,10 +5,18 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        config_layer {
+            bindings = <&mo 3>;
+            key-positions = <36 41>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -43,6 +51,15 @@
 &trans  &kp LALT  &kp LGUI  &kp LSHFT  &kp LCTRL  &trans    &trans  &kp LEFT           &kp DOWN  &kp RIGHT        &kp CAPS  &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans             &trans    &trans           &trans    &trans
                             &trans     &trans     &trans    &trans  &trans             &none
+            >;
+        };
+
+        config_layer {
+            bindings = <
+&bootloader  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &bt BT_SEL 0  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
