@@ -47,19 +47,19 @@
 
         nav_layer {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp C_VOLUME_DOWN  &kp UP    &kp C_VOLUME_UP  &trans    &trans
-&trans  &kp LALT  &kp LGUI  &kp LSHFT  &kp LCTRL  &trans    &trans  &kp LEFT           &kp DOWN  &kp RIGHT        &kp CAPS  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans             &trans    &trans           &trans    &trans
-                            &trans     &trans     &trans    &trans  &trans             &none
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &none         &kp UP           &none      &trans    &trans
+&trans  &kp LALT  &kp LGUI  &kp LSHFT  &kp LCTRL  &trans    &trans  &kp LEFT      &kp DOWN         &kp RIGHT  &kp CAPS  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans     &trans    &trans
+                            &trans     &trans     &trans    &trans  &trans        &none
             >;
         };
 
         config_layer {
             bindings = <
-&bootloader  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &bt BT_SEL 0  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans  &trans  &trans    &trans  &trans  &trans
+&bootloader  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans       &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
