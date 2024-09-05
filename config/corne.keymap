@@ -30,10 +30,10 @@
 
         default_layer {
             bindings = <
-&kp TAB     &kp Q                   &kp W               &kp E           &mt LG(R) R               &kp T                     &kp Y      &kp U            &kp I           &kp O               &kp P                           &kp ESCAPE
-&kp ESCAPE  &mt LC(LS(LA(LGUI))) A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_GUI F            &kp G                     &kp H      &mt RIGHT_GUI J  &mt LEFT_ALT K  &mt LEFT_CONTROL L  &mt LC(LS(LA(LGUI))) SEMICOLON  &kp SQT
-&kp DEL     &mt LG(Z) Z             &mt LG(X) X         &mt RG(C) C     &mt RG(V) V               &kp B                     &kp N      &kp M            &kp COMMA       &kp DOT             &kp FSLH                        &none
-                                                        &mo 1           &mt LEFT_SHIFT BACKSPACE  &mt LEFT_COMMAND SPACE    &kp ENTER  &kp BACKSPACE    &mo 2
+&kp TAB     &kp Q                   &kp W               &kp E           &mt LG(R) R            &kp T                     &kp Y      &kp U            &kp I           &kp O               &kp P                           &kp ESCAPE
+&kp ESCAPE  &mt LC(LS(LA(LGUI))) A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_GUI F         &kp G                     &kp H      &mt RIGHT_GUI J  &mt LEFT_ALT K  &mt LEFT_CONTROL L  &mt LC(LS(LA(LGUI))) SEMICOLON  &kp SQT
+&kp DEL     &mt LG(Z) Z             &mt LG(X) X         &mt RG(C) C     &mt RG(V) V            &kp B                     &kp N      &kp M            &kp COMMA       &kp DOT             &kp FSLH                        &none
+                                                        &mo 1           &mt LEFT_SHIFT DELETE  &mt LEFT_COMMAND SPACE    &kp ENTER  &kp BACKSPACE    &mo 2
             >;
         };
 
