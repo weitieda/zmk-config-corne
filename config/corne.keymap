@@ -38,12 +38,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        colemak_dh {
+            // -----------------------------------------------------------------------------------------------------------------------------
+            // |        |   Q    |   W    |     E     |     R     |     T     | # |     Y     |     U    |    I    |    O   |   P    |     |
+            // | LAYERS | A/LGUI | S/LALT |  D/LCTRL  |  F/LSHFT  |     G     | # |     H     | J/LSHFT  | K/LCTRR | L/LALT | ;/LGUI |     |
+            // |        |   Z    | X/RALT |     C     |     V     |     B     | # |     N     |     M    |    ,    | ./RALT |   /    |     |
+            //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
+
             bindings = <
-&kp TAB     &kp Q                   &kp W               &kp E           &mt LG(R) R            &kp T                     &kp Y      &kp U            &kp I           &kp O               &kp P                           &kp ESCAPE
-&kp ESCAPE  &mt LC(LS(LA(LGUI))) A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_GUI F         &kp G                     &kp H      &mt RIGHT_GUI J  &mt LEFT_ALT K  &mt LEFT_CONTROL L  &mt LC(LS(LA(LGUI))) SEMICOLON  &kp GRAVE
-&kp DEL     &mt LG(Z) Z             &mt LG(X) X         &mt RG(C) C     &mt RG(V) V            &kp B                     &kp N      &kp M            &kp COMMA       &kp DOT             &kp FSLH                        &kp SQT
-                                                        &mo 1           &mt LEFT_SHIFT DELETE  &mt LEFT_COMMAND SPACE    &kp ENTER  &kp BACKSPACE    &mo 2
+&trans      &kp Q       &kp W       &kp F        &kp P        &kp B          &kp J        &kp L        &kp U        &kp Y       &kp SQT     &trans
+&kp ESCAPE  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G          &kp M        &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &trans
+&mo 7       &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K        &kp H        &kp COMMA    &kp DOT     &kp FSLH    &trans
+                                    &lt 2 ESC    &lt 2 TAB    &lt 2 SPACE    &lt 2 ENTER  &lt 2 BSPC   &lt 2 DEL
             >;
         };
 
