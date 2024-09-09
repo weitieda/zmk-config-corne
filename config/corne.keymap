@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
 
         config_layer {
-            bindings = <&mo 3>;
+            bindings = <&mo 0>;
             key-positions = <36 41>;
         };
     };
@@ -48,7 +48,7 @@
             bindings = <
 &trans      &kp Q       &kp W       &kp F        &kp P        &kp B          &kp J        &kp L        &kp U        &kp Y       &kp SQT     &trans
 &kp ESCAPE  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G          &kp M        &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &trans
-&mo 7       &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K        &kp H        &kp COMMA    &kp DOT     &kp FSLH    &trans
+&mo 0       &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K        &kp H        &kp COMMA    &kp DOT     &kp FSLH    &trans
                                     &lt 2 ESC    &lt 2 TAB    &lt 2 SPACE    &lt 2 ENTER  &lt 2 BSPC   &lt 2 DEL
             >;
         };
@@ -69,28 +69,17 @@
         };
 
         symbols {
-// ------------------------------------------------------------------------------------
-// |     |  {  |  &  |  *  |  (  |  }  | # |      |       |       |      |      |     |
-// |     |  :  |  $  |  %  |  ^  |  +  | # |      | LSHFT | LCTRL | LALT | LGUI |     |
-// |     |  ~  |  !  |  @  |  #  |  |  | # |      |       |       | RALT |      |     |
-//                   |  (  |  )  |  _  | # | HELD |       |       |
+            // ------------------------------------------------------------------------------------
+            // |     |  {  |  &  |  *  |  (  |  }  | # |      |       |       |      |      |     |
+            // |     |  :  |  $  |  %  |  ^  |  +  | # |      | LSHFT | LCTRL | LALT | LGUI |     |
+            // |     |  ~  |  !  |  @  |  #  |  |  | # |      |       |       | RALT |      |     |
+            //                   |  (  |  )  |  _  | # | HELD |       |       |
 
             bindings = <
-&trans  &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC              &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS              &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE              &trans  &trans     &trans     &kp RALT  &trans    &trans
-                             &kp LPAR   &kp RPAR   &kp UNDERSCORE        &trans  &trans     &trans
-            >;
-        };
-
- 
-
-        nav_layer {
-            bindings = <
-&trans  &trans            &trans        &trans     &trans            &trans    &trans  &none         &kp UP           &none      &trans    &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LSHFT  &kp LEFT_COMMAND  &trans    &trans  &kp LEFT      &kp DOWN         &kp RIGHT  &kp CAPS  &trans
-&trans  &trans            &trans        &trans     &trans            &trans    &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans     &trans    &trans
-                                        &trans     &trans            &trans    &trans  &trans        &none
+&trans  &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC          &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &trans  &trans     &trans     &kp RALT  &trans    &trans
+                             &kp LPAR   &kp RPAR   &kp UNDERSCORE    &trans  &trans     &trans
             >;
         };
 
