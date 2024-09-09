@@ -49,7 +49,7 @@
 &trans      &kp Q       &kp W       &kp F        &kp P        &kp B          &kp J        &kp L        &kp U        &kp Y       &kp SQT     &trans
 &kp ESCAPE  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G          &kp M        &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &trans
 &mo 0       &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K        &kp H        &kp COMMA    &kp DOT     &kp FSLH    &trans
-                                    &lt 2 ESC    &lt 2 TAB    &lt 2 SPACE    &lt 2 ENTER  &lt 2 BSPC   &lt 2 DEL
+                                    &lt 2 ESC    &lt 1 TAB    &lt 2 SPACE    &lt 2 ENTER  &lt 4 BSPC   &lt 2 DEL
             >;
         };
 
