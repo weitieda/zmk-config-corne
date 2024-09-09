@@ -50,7 +50,7 @@
         compatible = "zmk,keymap";
 
         colemak_dh {
-            label: "COLEMAK";
+            label: COLEMAK = ";
 
             // -----------------------------------------------------------------------------------------------------------------------------
             // |        |   Q    |   W    |     E     |     R     |     T     | # |     Y     |     U    |    I    |    O   |   P    |     |
@@ -67,7 +67,8 @@
         };
 
         navigation {
-        label: "NAV";
+            label: NAV = ";
+
             // -------------------------------------------------------------------------------------------
             // |     |      |      |       |       |     | # | REDO  | CUT  | COPY | PASTE | UNDO  |     |
             // |     | LGUI | LALT | LCTRL | LSHFT |     | # | CAPS  | LEFT | DOWN | UP    | RIGHT |     |
@@ -83,7 +84,8 @@
         };
 
         symbols {
-         label: "SYM";
+            label: SYM = ";
+
             // ------------------------------------------------------------------------------------
             // |     |  {  |  &  |  *  |  (  |  }  | # |      |       |       |      |      |     |
             // |     |  :  |  $  |  %  |  ^  |  +  | # |      | LSHFT | LCTRL | LALT | LGUI |     |
@@ -99,7 +101,8 @@
         };
 
         mouse {
-         label: "MOUSE";
+            label: MOUSE = ";
+
             // ------------------------------------------------------------------------------------
             // |     |      |      |       |       |      | # |     |     |     |     |     |     |
             // |     | LGUI | LALT | LCTRL | LSHFT |      | # |     |     |     |     |     |     |
@@ -115,7 +118,8 @@
         };
 
         numbers {
-     label: "NUM";
+            label: NUM = ";
+
             // -----------------------------------------------------------------------------------
             // |     |  [  |  7  |  8  |  9  |  ]  | # |     |       |       |      |      |     |
             // |     |  ;  |  4  |  5  |  6  |  =  | # |     | LSHFT | LCTRL | LALT | LGUI |     |
@@ -123,10 +127,10 @@
             //                   |  .  |  0  |  -  | # |     | HELD  |       |
 
             bindings = <
-&trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp SQT    &kp N4  &kp N5   &kp N6  &kp EQUAL    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &trans  &trans     &trans     &kp RALT  &trans    &trans
-                           &kp DOT  &kp N0  &kp MINUS    &trans  &trans     &trans
+&trans  &kp LBKT       &kp N7  &kp N8   &kp N9  &kp RBKT     &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp SEMICOLON  &kp N4  &kp N5   &kp N6  &kp EQUAL    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp GRAVE      &kp N1  &kp N2   &kp N3  &kp BSLH     &trans  &trans     &trans     &kp RALT  &trans    &trans
+                               &kp DOT  &kp N0  &kp MINUS    &trans  &trans     &trans
             >;
         };
     };
