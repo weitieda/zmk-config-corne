@@ -13,6 +13,7 @@
 #define SYM 2
 #define MOUSE 3
 #define NUM 4
+#define QWERTY 5
 
 &mt {
     tapping-term-ms = <200>;
