@@ -141,6 +141,9 @@
         };
 
         left_nav {
+
+           label = "LEFTNAV";     
+
             bindings = <
 &trans  &trans     &none      &kp UP     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &none      &kp LEFT   &kp DOWN   &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
