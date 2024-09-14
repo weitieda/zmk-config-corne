@@ -141,15 +141,24 @@
         };
 
         left_nav {
-
-           label = "LEFTNAV";     
-
+            label = "LEFTNAV";
             bindings = <
-&trans  &trans     &none      &kp UP     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none      &kp LEFT   &kp DOWN   &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans     &trans     &trans    &trans  &trans  &trans
+&kp LG(N0)     &kp LC(N0)     &kp LC(NUMBER_4)  &kp UP     &kp LG(R)  &kp LG(LC(R))        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(GRAVE)  &kp LC(GRAVE)  &kp LEFT          &kp DOWN   &kp RIGHT  &kp LG(LS(LA(D)))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &kp LG(Z)      &kp LG(X)         &kp LG(C)  &kp LG(V)  &kp LG(T)            &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans     &trans     &trans               &trans  &trans  &trans
             >;
+        };
+
+        app {
+            bindings = <
+&trans  &kp LG(N0)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "app";
         };
     };
 
