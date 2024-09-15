@@ -55,20 +55,20 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&trans      &kp Q       &kp W        &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y        &kp SQT     &trans
-&kp ESCAPE  &mt LALT A  &mt LCTRL R  &mt LSHIFT S  &mt LGUI T  &kp G          &kp M        &mt LGUI N  &mt LSHIFT E  &mt LCTRL I  &mt LALT O  &kp LS(LA(LC(LG(B))))
-&to 1       &kp Z       &kp X        &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT      &kp FSLH    &kp LS(LA(LC(LG(SQT))))
-                                     &lt 3 ESC     &lt 2 TAB   &lt 6 SPACE    &lt 3 ENTER  &lt 5 BSPC  &lt 3 DEL
+&trans      &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &trans
+&kp ESCAPE  &mt RIGHT_CONTROL A  &mt LALT R  &mt LSHIFT S  &mt LGUI T  &kp G          &kp M        &mt LGUI N  &mt LSHIFT E  &mt RALT I  &mt RIGHT_CONTROL O  &kp LS(LA(LC(LG(B))))
+&to 1       &kp Z                &kp X       &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT     &kp FSLH             &kp LS(LA(LC(LG(SQT))))
+                                             &lt 3 ESC     &lt 2 TAB   &lt 6 SPACE    &lt 3 ENTER  &lt 5 BSPC  &lt 3 DEL
             >;
         };
 
         qwerty {
             label = "QWERTY";
             bindings = <
-&trans      &kp Q       &kp W        &kp E         &kp R       &kp T          &kp Y        &kp U       &kp I         &kp O        &kp P          &trans
-&kp ESCAPE  &mt LALT A  &mt LCTRL S  &mt LSHIFT D  &mt LGUI F  &kp G          &kp H        &mt LGUI J  &mt LSHIFT K  &mt LCTRL L  &mt LALT SEMI  &trans
-&to 0       &kp Z       &kp X        &kp C         &kp V       &kp B          &kp N        &kp M       &kp COMMA     &kp DOT      &kp FSLH       &trans
-                                     &lt 3 ESC     &lt 2 TAB   &lt 4 SPACE    &lt 3 ENTER  &lt 5 BSPC  &lt 3 DEL
+&trans      &kp Q               &kp W       &kp E         &kp R       &kp T          &kp Y        &kp U       &kp I         &kp O       &kp P                   &trans
+&kp ESCAPE  &mt LEFT_CONTROL A  &mt LALT S  &mt LSHIFT D  &mt LGUI F  &kp G          &kp H        &mt LGUI J  &mt LSHIFT K  &mt RALT L  &mt RIGHT_CONTROL SEMI  &trans
+&to 0       &kp Z               &kp X       &kp C         &kp V       &kp B          &kp N        &kp M       &kp COMMA     &kp DOT     &kp FSLH                &trans
+                                            &lt 3 ESC     &lt 2 TAB   &lt 4 SPACE    &lt 3 ENTER  &lt 5 BSPC  &lt 3 DEL
             >;
         };
 
@@ -82,9 +82,9 @@
             //                     |       | HELD  |     | # | ENTER | BSPC | DEL  |
 
             bindings = <
-&trans  &trans    &trans     &trans      &trans    &trans    &kp LG(LS(Z))  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(Z)  &kp LS(LA(LG(V)))
-&trans  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp LGUI  &trans    &kp CAPSLOCK   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans    &trans     &trans      &trans    &trans    &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
+&trans  &trans    &trans     &trans      &trans    &trans    &kp LG(LS(Z))  &kp LG(V)  &kp UP     &kp LG(V)  &kp LG(LS(Z))  &kp LS(LA(LG(V)))
+&trans  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp LGUI  &trans    &kp LG(C)      &kp LEFT   &kp DOWN   &kp RIGHT  &kp LG(Z)      &trans
+&trans  &trans    &trans     &trans      &trans    &trans    &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END        &trans
                              &trans      &trans    &trans    &kp ENTER      &kp BSPC   &kp DEL
             >;
         };
