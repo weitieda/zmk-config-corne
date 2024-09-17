@@ -55,7 +55,7 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&trans      &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &trans
+&to 5       &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &trans
 &kp ESCAPE  &mt RIGHT_CONTROL A  &mt LALT R  &mt LSHIFT S  &mt LGUI T  &kp G          &kp M        &mt LGUI N  &mt LSHIFT E  &mt RALT I  &mt RIGHT_CONTROL O  &kp LS(LA(LC(LG(B))))
 &to 1       &kp Z                &kp X       &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT     &kp FSLH             &kp LS(LA(LC(LG(SQT))))
                                              &lt 3 ESC     &lt 2 TAB   &lt 6 SPACE    &lt 3 ENTER  &lt 5 BSPC  &lt 3 DEL
