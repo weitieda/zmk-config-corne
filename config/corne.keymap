@@ -40,6 +40,11 @@
             bindings = <&kp ENTER>;
             key-positions = <14 15 16>;
         };
+
+        option+d {
+            bindings = <&kp LA(D)>;
+            key-positions = <14 15>;
+        };
     };
 
     keymap {
