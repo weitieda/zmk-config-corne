@@ -157,22 +157,15 @@
 
         app {
             bindings = <
-&trans     &kp LG(N0)     &trans         &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(E)  &kp LG(LS(X))  &kp LG(LS(O))  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans         &trans         &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans  &trans  &trans    &trans  &trans  &trans
+&kp LG(LC(NUMBER_6))  &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(E)             &kp LG(LS(X))         &kp LG(LS(O))         &kp LC(D)             &trans                &kp LG(LC(N7))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &trans                &trans                &trans                &trans                &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                                                                  &trans                &trans                &trans            &trans  &trans  &trans
             >;
 
             label = "app";
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        mouse {
-            if-layers = <6 5>;
-            then-layer = <4>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
