@@ -157,10 +157,10 @@
 
         app {
             bindings = <
-&kp LG(LC(NUMBER_6))  &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(LS(Z))         &kp LG(Z)             &kp LG(X)             &kp LG(C)             &kp LG(V)             &kp LG(LC(N7))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                &kp LG(LS(Z))         &kp LG(Z)             &kp LG(LS(Z))         &kp LG(Z)             &kp LG(B)         &trans  &trans  &trans  &trans  &trans  &trans
-                                                                  &trans                &trans                &trans            &trans  &trans  &trans
+&kp LG(LC(NUMBER_6))   &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LS(Z))          &kp LG(Z)             &kp LG(X)             &kp LG(C)             &kp LG(V)             &kp LG(LC(N7))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp RG(K_VOLUME_DOWN)  &kp K_VOLUME_UP       &kp LG(Z)             &kp LG(LS(Z))         &kp LG(Z)             &kp LG(B)         &trans  &trans  &trans  &trans  &trans  &trans
+                                                                   &trans                &trans                &trans            &trans  &trans  &trans
             >;
 
             label = "app";
