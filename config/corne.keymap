@@ -87,9 +87,9 @@
             //                     |       | HELD  |     | # | ENTER | BSPC | DEL  |
 
             bindings = <
-&trans  &trans            &trans        &trans      &trans    &trans    &kp LG(LS(Z))  &kp LG(C)  &kp UP     &kp LG(V)  &kp LG(LS(Z))  &kp LS(LA(LG(V)))
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LSHIFT  &kp LGUI  &trans    &kp LG(X)      &kp LEFT   &kp DOWN   &kp RIGHT  &kp LG(Z)      &trans
-&trans  &trans            &trans        &trans      &trans    &trans    &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END        &trans
+&trans  &trans            &trans        &trans      &trans    &trans    &kp LG(LS(Z))  &kp LG(C)  &kp UP            &kp LG(V)  &kp LG(LS(Z))  &kp LS(LA(LG(V)))
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LSHIFT  &kp LGUI  &trans    &kp LG(X)      &kp LEFT   &kp DOWN          &kp RIGHT  &kp LG(Z)      &trans
+&trans  &trans            &trans        &trans      &trans    &trans    &kp INS        &kp HOME   &kp LS(LA(DOWN))  &kp PG_UP  &kp END        &trans
                                         &trans      &trans    &trans    &kp ENTER      &kp BSPC   &kp DEL
             >;
         };
@@ -131,10 +131,10 @@
         xcode {
             label = "xcode";
             bindings = <
-&kp LG(N0)          &kp LC(N0)         &kp LG(LS(Y))  &kp LC(NUMBER_4)  &kp LG(R)          &kp LG(LC(R))    &trans  &trans         &trans         &trans         &trans  &trans
-&kp LG(GRAVE)       &kp LC(GRAVE)      &kp LG(LS(F))  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LS(O))    &trans  &kp LG(LC(J))  &kp LG(LA(J))  &kp LG(LC(E))  &trans  &trans
-&kp LG(LC(LA(N0)))  &kp LG(LC(LA(I)))  &kp LG(F)      &kp LG(LS(J))     &kp LG(LA(LC(D)))  &kp LG(LC(T))    &trans  &trans         &trans         &trans         &trans  &trans
-                                                      &trans            &trans             &trans           &trans  &trans         &trans
+&kp LG(N0)          &kp LC(N0)         &kp LG(LS(Y))          &kp LC(NUMBER_4)  &kp LG(R)          &kp LG(LC(R))    &trans  &trans         &trans         &trans         &trans  &trans
+&kp LG(GRAVE)       &kp LC(GRAVE)      &kp LG(LS(LA(F)))      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LS(O))    &trans  &kp LG(LC(J))  &kp LG(LA(J))  &kp LG(LC(E))  &trans  &trans
+&kp LG(LC(LA(N0)))  &kp LG(LC(LA(I)))  &kp LG(LC(LA(LS(F))))  &kp LG(LS(J))     &kp LG(LA(LC(D)))  &kp LG(LC(T))    &trans  &trans         &trans         &trans         &trans  &trans
+                                                              &trans            &trans             &trans           &trans  &trans         &trans
             >;
         };
 
