@@ -145,20 +145,20 @@
             >;
         };
 
-        left_nav {
-            label = "LEFTNAV";
+        xcode {
+            label = "xcode";
             bindings = <
-&kp LG(N0)     &kp LC(N0)     &kp LC(NUMBER_4)  &kp UP     &kp LG(R)  &kp LG(LC(R))        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(GRAVE)  &kp LC(GRAVE)  &kp LEFT          &kp DOWN   &kp RIGHT  &kp LG(LS(LA(D)))    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(Z))  &kp LG(Z)      &kp LG(X)         &kp LG(C)  &kp LG(V)  &kp LG(T)            &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans     &trans     &trans               &trans  &trans  &trans
+&kp LG(N0)          &kp LC(N0)         &kp LG(LS(Y))  &kp LC(NUMBER_4)  &kp LG(R)          &kp LG(LC(R))    &trans  &trans         &trans         &trans         &trans  &trans
+&kp LG(GRAVE)       &kp LC(GRAVE)      &kp LG(LS(F))  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LS(O))    &trans  &kp LG(LC(J))  &kp LG(LA(J))  &kp LG(LC(E))  &trans  &trans
+&kp LG(LC(LA(N0)))  &kp LG(LC(LA(I)))  &kp LG(F)      &kp LG(LS(J))     &kp LG(LA(LC(D)))  &kp LG(LC(T))    &trans  &trans         &trans         &trans         &trans  &trans
+                                                      &trans            &trans             &trans           &trans  &trans         &trans
             >;
         };
 
         app {
             bindings = <
 &kp LG(LC(NUMBER_6))  &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(E)             &kp LG(LS(X))         &kp LG(LS(O))         &kp LC(D)             &trans                &kp LG(LC(N7))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(E)             &kp LG(LS(X))         &kp LG(LS(O))         &kp LC(D)             &kp LG(LS(F))         &kp LG(LC(N7))    &trans  &trans  &trans  &trans  &trans  &trans
 &trans                &trans                &trans                &trans                &trans                &trans            &trans  &trans  &trans  &trans  &trans  &trans
                                                                   &trans                &trans                &trans            &trans  &trans  &trans
             >;
