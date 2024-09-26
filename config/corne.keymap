@@ -60,10 +60,10 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&to 5       &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &trans
+&to 4       &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &trans
 &kp ESCAPE  &mt RIGHT_CONTROL A  &mt LALT R  &mt LSHIFT S  &mt LGUI T  &kp G          &kp M        &mt LGUI N  &mt LSHIFT E  &mt RALT I  &mt RIGHT_CONTROL O  &kp LS(LA(LC(LG(B))))
 &to 1       &kp Z                &kp X       &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT     &kp FSLH             &kp LS(LA(LC(LG(SQT))))
-                                             &lt 7 ESC     &lt 3 TAB   &lt 6 SPACE    &lt 5 ENTER  &lt 3 BSPC  &lt 2 DEL
+                                             &lt 6 ESC     &lt 3 TAB   &lt 5 SPACE    &lt 4 ENTER  &lt 3 BSPC  &lt 2 DEL
             >;
         };
 
@@ -111,23 +111,6 @@
             >;
         };
 
-        mouse {
-            label = "MOUSE";
-
-            // ------------------------------------------------------------------------------------
-            // |     |      |      |       |       |      | # |     |     |     |     |     |     |
-            // |     | LGUI | LALT | LCTRL | LSHFT |      | # |     |     |     |     |     |     |
-            // |     |      | RALT |       |       |      | # |     |     |     |     |     |     |
-            //                     |       |       | HELD | # |     |     |     |
-
-            bindings = <
-&trans  &kp LG(Z)         &kp LG(X)     &kp LG(C)  &kp LG(V)  &trans         &trans       &trans     &trans  &trans  &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LSHFT  &kp LGUI   &trans         &trans       &mkp LCLK  &trans  &trans  &trans  &trans
-&trans  &trans            &kp LCTRL     &trans     &trans     &bootloader    &bootloader  &trans     &trans  &trans  &trans  &trans
-                                        &trans     &trans     &trans         &trans       &none      &trans
-            >;
-        };
-
         numbers {
             label = "NUM";
 
@@ -158,12 +141,29 @@
         app {
             bindings = <
 &kp LG(LC(NUMBER_6))   &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(LS(Z))          &kp LG(Z)             &kp LG(X)             &kp LG(C)             &kp LG(V)             &kp LG(LC(N7))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LS(Z))          &kp LG(LS(X))         &kp LG(X)             &kp LG(C)             &kp LG(V)             &kp LG(LC(N7))    &trans  &trans  &trans  &trans  &trans  &trans
 &kp RG(K_VOLUME_DOWN)  &kp K_VOLUME_UP       &kp LG(Z)             &kp LG(LS(Z))         &kp LG(Z)             &kp LG(B)         &trans  &trans  &trans  &trans  &trans  &trans
                                                                    &trans                &trans                &trans            &trans  &trans  &trans
             >;
 
             label = "app";
+        };
+
+        mouse {
+            label = "MOUSE";
+
+            // ------------------------------------------------------------------------------------
+            // |     |      |      |       |       |      | # |     |     |     |     |     |     |
+            // |     | LGUI | LALT | LCTRL | LSHFT |      | # |     |     |     |     |     |     |
+            // |     |      | RALT |       |       |      | # |     |     |     |     |     |     |
+            //                     |       |       | HELD | # |     |     |     |
+
+            bindings = <
+&trans  &kp LG(Z)         &kp LG(X)     &kp LG(C)  &kp LG(V)  &trans         &trans       &trans     &trans  &trans  &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LSHFT  &kp LGUI   &trans         &trans       &mkp LCLK  &trans  &trans  &trans  &trans
+&trans  &trans            &kp LCTRL     &trans     &trans     &bootloader    &bootloader  &trans     &trans  &trans  &trans  &trans
+                                        &trans     &trans     &trans         &trans       &none      &trans
+            >;
         };
     };
 
