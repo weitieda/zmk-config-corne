@@ -146,10 +146,10 @@
 
         app {
             bindings = <
-&kp LG(LC(NUMBER_6))   &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))              &kp LG(LC(N5))                      &trans  &trans  &trans          &trans    &trans            &trans
-&kp LG(T)              &kp LG(LS(X))         &kp LG(X)             &kp LG(C)             &kp LG(V)                         &kp LG(LC(N7))                      &trans  &trans  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_CONTROL  &trans
-&kp RG(K_VOLUME_DOWN)  &kp K_VOLUME_UP       &kp LG(Z)             &kp LG(LS(Z))         &kp LG(LC(LA(NON_US_BACKSLASH)))  &kp LS(LA(LC(NON_US_BACKSLASH)))    &trans  &trans  &trans          &trans    &trans            &trans
-                                                                   &trans                &trans                            &trans                              &trans  &trans  &trans
+&kp LG(LC(NUMBER_6))   &kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))            &trans  &trans  &trans          &trans    &trans            &trans
+&kp LG(T)              &kp LG(LS(X))         &kp LG(X)             &kp LG(C)             &kp LG(V)             &kp LG(LC(N7))            &trans  &trans  &kp LEFT_SHIFT  &kp LALT  &kp LEFT_CONTROL  &trans
+&kp RG(K_VOLUME_DOWN)  &kp K_VOLUME_UP       &kp LG(Z)             &kp LG(LS(Z))         &kp LG(LC(LA(F6)))    &kp LS(LA(LC(LG(F6))))    &trans  &trans  &trans          &trans    &trans            &trans
+                                                                   &trans                &trans                &trans                    &trans  &trans  &trans
             >;
 
             label = "app";
