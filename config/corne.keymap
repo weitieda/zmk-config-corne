@@ -110,10 +110,10 @@
             //                   |  (  |  )  |  _  | # | HELD |       |       |
 
             bindings = <
-&kp ASTERISK  &kp LCTRL        &kp AMPS     &kp BACKSLASH      &kp COLON         &kp RBRC     &trans  &trans    &trans      &trans        &trans            &trans
-&kp DOLLAR    &kp EXCLAMATION  &kp EQUAL    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp PLUS     &trans  &kp LGUI  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
-&kp PERCENT   &kp TILDE        &kp AT_SIGN  &kp GRAVE          &kp LEFT_BRACKET  &kp HASH     &trans  &trans    &trans      &kp LCTRL     &trans            &trans
-                                            &kp LPAR           &kp RPAR          &kp MINUS    &trans  &trans    &trans
+&kp ASTERISK  &kp LCTRL        &kp AMPS     &kp BACKSLASH      &kp COLON         &kp RBRC     &trans             &trans    &trans      &trans        &trans            &trans
+&kp DOLLAR    &kp EXCLAMATION  &kp EQUAL    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp PLUS     &kp LC(LG(LS(M)))  &kp LGUI  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
+&kp PERCENT   &kp TILDE        &kp AT_SIGN  &kp GRAVE          &kp LEFT_BRACKET  &kp HASH     &trans             &trans    &trans      &kp LCTRL     &trans            &trans
+                                            &kp LPAR           &kp RPAR          &kp MINUS    &trans             &trans    &trans
             >;
         };
 
@@ -137,10 +137,10 @@
         xcode {
             label = "xcode";
             bindings = <
-&kp LG(N0)          &kp LC(N0)         &kp LG(LS(Y))          &kp LC(NUMBER_4)  &kp LG(R)          &kp LG(LC(R))       &trans  &trans         &trans         &trans         &trans  &trans
-&kp LG(GRAVE)       &kp LC(GRAVE)      &kp LG(LS(LA(F)))      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LS(O))       &trans  &kp LG(LC(J))  &kp LG(LA(J))  &kp LG(LC(E))  &trans  &trans
-&kp LG(LC(LA(N0)))  &kp LG(LC(LA(I)))  &kp LG(LC(LA(LS(F))))  &kp LG(LS(J))     &kp LG(LA(LC(D)))  &kp LS(LA(DOWN))    &trans  &trans         &trans         &trans         &trans  &trans
-                                                              &trans            &trans             &trans              &trans  &trans         &trans
+&kp LG(N0)          &kp LC(N0)         &kp LG(LS(Y))          &kp LC(NUMBER_4)  &kp LG(R)          &kp LG(LC(R))       &trans             &trans         &trans         &trans         &trans  &trans
+&kp LG(GRAVE)       &kp LC(GRAVE)      &kp LG(LS(LA(F)))      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LS(O))       &kp LG(LS(LC(M)))  &kp LG(LC(J))  &kp LG(LA(J))  &kp LG(LC(E))  &trans  &trans
+&kp LG(LC(LA(N0)))  &kp LG(LC(LA(I)))  &kp LG(LC(LA(LS(F))))  &kp LG(LS(J))     &kp LG(LA(LC(D)))  &kp LS(LA(DOWN))    &trans             &trans         &trans         &trans         &trans  &trans
+                                                              &trans            &trans             &trans              &trans             &trans         &trans
             >;
         };
 
