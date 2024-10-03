@@ -66,7 +66,7 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&to 4       &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &trans
+&to 4       &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &kp GRAVE
 &kp ESCAPE  &mt RIGHT_CONTROL A  &mt LALT R  &mt LSHIFT S  &mt LGUI T  &kp G          &kp M        &mt LGUI N  &mt LSHIFT E  &mt RALT I  &mt RIGHT_CONTROL O  &kp LS(LA(LC(LG(B))))
 &to 1       &kp Z                &kp X       &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT     &kp FSLH             &kp LS(LA(LC(LG(SQT))))
                                              &lt 6 ESC     &lt 3 TAB   &lt 5 SPACE    &lt 4 ENTER  &lt 3 BSPC  &lt 2 DEL
@@ -110,10 +110,10 @@
             //                   |  (  |  )  |  _  | # | HELD |       |       |
 
             bindings = <
-&kp ASTERISK  &kp LCTRL        &kp AMPS     &kp BACKSLASH      &kp COLON         &kp RBRC     &trans             &trans    &trans      &trans        &trans            &trans
-&kp DOLLAR    &kp EXCLAMATION  &kp EQUAL    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp PLUS     &kp LC(LG(LS(M)))  &kp LGUI  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
-&kp PERCENT   &kp TILDE        &kp AT_SIGN  &kp GRAVE          &kp LEFT_BRACKET  &kp HASH     &trans             &trans    &trans      &kp LCTRL     &trans            &trans
-                                            &kp LPAR           &kp RPAR          &kp MINUS    &trans             &trans    &trans
+&kp ASTERISK  &kp LCTRL        &kp AMPS     &kp BACKSLASH      &kp COLON         &kp RBRC     &trans         &trans             &trans      &trans        &trans            &trans
+&kp DOLLAR    &kp EXCLAMATION  &kp EQUAL    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp PLUS     &none          &kp LGUI           &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
+&kp PERCENT   &kp TILDE        &kp AT_SIGN  &kp GRAVE          &kp LEFT_BRACKET  &kp HASH     &kp SEMICOLON  &kp RIGHT_BRACKET  &trans      &none         &trans            &trans
+                                            &kp LPAR           &kp RPAR          &kp MINUS    &trans         &trans             &trans
             >;
         };
 
