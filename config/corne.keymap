@@ -110,10 +110,10 @@
             //                   |  (  |  )  |  _  | # | HELD |       |       |
 
             bindings = <
-&kp AT_SIGN  &kp LCTRL        &kp AMPS     &kp BACKSLASH      &kp COLON         &kp RBRC     &trans         &trans             &trans      &trans        &trans            &trans
-&kp DOLLAR   &kp EXCLAMATION  &kp EQUAL    &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp PLUS     &kp ASTERISK   &kp LGUI           &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
-&kp PERCENT  &kp TILDE        &kp AT_SIGN  &kp UNDERSCORE     &kp LEFT_BRACKET  &kp HASH     &kp SEMICOLON  &kp RIGHT_BRACKET  &trans      &none         &trans            &trans
-                                           &kp LPAR           &kp RPAR          &kp MINUS    &trans         &trans             &trans
+&kp AT_SIGN  &kp LCTRL        &kp AMPS        &kp COLON          &kp BACKSLASH     &kp RBRC     &trans         &trans             &trans      &trans        &trans            &trans
+&kp DOLLAR   &kp EXCLAMATION  &kp EQUAL       &kp DOUBLE_QUOTES  &kp LEFT_BRACE    &kp PLUS     &kp ASTERISK   &kp LGUI           &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
+&kp PERCENT  &kp TILDE        &kp UNDERSCORE  &kp ASTERISK       &kp LEFT_BRACKET  &kp HASH     &kp SEMICOLON  &kp RIGHT_BRACKET  &trans      &none         &trans            &trans
+                                              &kp LPAR           &kp RPAR          &kp MINUS    &trans         &trans             &trans
             >;
         };
 
