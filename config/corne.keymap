@@ -51,6 +51,12 @@
             bindings = <&mo 7>;
             key-positions = <38 39>;
         };
+
+        retest {
+            bindings = <&kp LG(LA(LC(LS(D))))>;
+            key-positions = <15 28>;
+            layers = <5>;
+        };
     };
 
     keymap {
