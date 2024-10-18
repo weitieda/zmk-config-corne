@@ -42,20 +42,9 @@
             key-positions = <14 15 16>;
         };
 
-        option+d {
-            bindings = <&kp LA(D)>;
-            key-positions = <14 15>;
-        };
-
         mouse_layer {
-            bindings = <&mo 7>;
+            bindings = <&mo 6>;
             key-positions = <38 39>;
-        };
-
-        retest {
-            bindings = <&kp LG(LA(LC(LS(D))))>;
-            key-positions = <15 28>;
-            layers = <5>;
         };
     };
 
@@ -72,20 +61,10 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&to 4       &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &kp GRAVE
+&tog 3      &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &kp GRAVE
 &kp ESCAPE  &mt RIGHT_CONTROL A  &mt LALT R  &mt LSHIFT S  &mt LGUI T  &kp G          &kp M        &mt LGUI N  &mt LSHIFT E  &mt RALT I  &mt RIGHT_CONTROL O  &kp LS(LA(LC(LG(B))))
-&to 1       &kp Z                &kp X       &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT     &kp FSLH             &kp LS(LA(LC(LG(SQT))))
-                                             &lt 6 ESC     &lt 3 TAB   &lt 5 SPACE    &lt 4 ENTER  &lt 3 BSPC  &lt 2 DEL
-            >;
-        };
-
-        qwerty {
-            label = "QWERTY";
-            bindings = <
-&trans      &kp Q               &kp W       &kp E         &kp R       &kp T     &kp Y   &kp U       &kp I         &kp O       &kp P                   &kp SQT
-&kp ESCAPE  &mt LEFT_CONTROL A  &mt LALT S  &mt LSHIFT D  &mt LGUI F  &kp G     &kp H   &mt LGUI J  &mt LSHIFT K  &mt RALT L  &mt RIGHT_CONTROL SEMI  &trans
-&to 0       &kp Z               &kp X       &kp C         &kp V       &kp B     &kp N   &kp M       &kp COMMA     &kp DOT     &kp FSLH                &trans
-                                            &trans        &trans      &trans    &trans  &trans      &trans
+&tog 7      &kp Z                &kp X       &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT     &kp FSLH             &kp LS(LA(LC(LG(SQT))))
+                                             &lt 5 ESC     &lt 2 TAB   &lt 4 SPACE    &lt 3 ENTER  &lt 2 BSPC  &lt 1 DEL
             >;
         };
 
@@ -143,10 +122,10 @@
         xcode {
             label = "xcode";
             bindings = <
-&kp LG(N0)          &kp LC(N0)         &kp LG(LS(Y))          &kp LC(NUMBER_4)  &kp LG(R)          &kp LG(LC(R))       &kp LG(LC(LS(A)))  &trans         &trans         &trans         &trans  &trans
-&kp LG(GRAVE)       &kp LC(GRAVE)      &kp LG(LS(LC(F)))      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LS(O))       &kp LG(LS(LC(M)))  &kp LG(LC(J))  &kp LG(LA(J))  &kp LG(LC(E))  &trans  &trans
-&kp LG(LC(LA(N0)))  &kp LG(LC(LA(I)))  &kp LG(LC(LA(LS(F))))  &kp LG(LS(J))     &kp LG(LA(LC(D)))  &kp LS(LA(DOWN))    &trans             &trans         &trans         &trans         &trans  &trans
-                                                              &trans            &trans             &trans              &trans             &trans         &trans
+&kp LG(N0)          &kp LC(N0)         &kp LG(LS(Y))          &kp LC(NUMBER_4)       &kp LG(R)          &kp LG(LC(R))       &kp LG(LC(LS(A)))  &trans         &trans         &trans         &trans  &trans
+&kp LG(LS(J))       &kp LG(LS(F))      &kp LG(LS(LC(F)))      &kp LG(LC(LEFT))       &kp LG(LC(RIGHT))  &kp LG(LS(O))       &kp LG(LS(LC(M)))  &kp LG(LC(J))  &kp LG(LA(J))  &kp LG(LC(E))  &trans  &trans
+&kp LG(LC(LA(N0)))  &kp LG(LC(LA(I)))  &kp LG(LC(LA(LS(F))))  &kp LG(LS(LC(LA(D))))  &kp LG(LA(LC(D)))  &kp LS(LA(DOWN))    &trans             &trans         &trans         &trans         &trans  &trans
+                                                              &trans                 &trans             &trans              &trans             &trans         &trans
             >;
         };
 
@@ -175,6 +154,15 @@
 &trans        &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LSHFT  &kp LGUI   &trans         &trans       &mkp LCLK  &trans  &trans  &trans  &trans
 &bt BT_SEL 0  &bt BT_SEL 1      &kp LCTRL     &trans     &trans     &bootloader    &bootloader  &trans     &trans  &trans  &trans  &trans
                                               &trans     &trans     &trans         &trans       &none      &trans
+            >;
+        };
+
+        media {
+            bindings = <
+&trans  &trans             &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans             &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
