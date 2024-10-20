@@ -52,6 +52,12 @@
             key-positions = <25 24>;
             layers = <5>;
         };
+
+        switchapp {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <15 16>;
+            layers = <5>;
+        };
     };
 
     keymap {
