@@ -35,11 +35,13 @@
         vac {
             bindings = <&kp BACKSPACE>;
             key-positions = <3 4>;
+            layers = <0>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <14 15 16>;
+            layers = <0>;
         };
 
         mouse_layer {
@@ -76,7 +78,7 @@
 &tog 3      &kp Q                &kp W       &kp F         &kp P       &kp B          &kp J        &kp L       &kp U         &kp Y       &kp SQT              &kp GRAVE
 &kp ESCAPE  &mt RIGHT_CONTROL A  &mt LALT R  &mt LSHIFT S  &mt LGUI T  &kp G          &kp M        &mt LGUI N  &mt LSHIFT E  &mt RALT I  &mt RIGHT_CONTROL O  &kp LS(LA(LC(LG(B))))
 &mo 7       &kp Z                &kp X       &kp C         &kp D       &kp V          &kp K        &kp H       &kp COMMA     &kp DOT     &kp FSLH             &kp LS(LA(LC(LG(SQT))))
-                                             &lt 5 ESC     &lt 2 TAB   &lt 4 SPACE    &lt 3 ENTER  &lt 2 BSPC  &lt 1 DEL
+                                             &lt 2 ESC     &lt 5 TAB   &lt 4 SPACE    &lt 3 ENTER  &lt 2 BSPC  &lt 1 DEL
             >;
         };
 
