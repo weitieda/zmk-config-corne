@@ -46,6 +46,12 @@
             bindings = <&mo 6>;
             key-positions = <38 39>;
         };
+
+        fullscreen {
+            bindings = <&kp LG(LA(LC(LS(SPACE))))>;
+            key-positions = <25 24>;
+            layers = <5>;
+        };
     };
 
     keymap {
